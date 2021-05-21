@@ -13,13 +13,17 @@ status](https://www.r-pkg.org/badges/version/ezverse)](https://CRAN.R-project.or
 
 The `ezverse` is intended to make various aspects of data science,
 automated reporting, and data exploration much easier (ez… get it?).
-Currently, the ezverse is comprised of the following packages:
+Currently, the `ezverse` is comprised of the following packages:
 
 -   [**ezxfig**](https://github.com/EricLamphere/ezxfig.git)
 -   [**ezexplore**](https://github.com/EricLamphere/ezexplore.git)
 -   [**ezdates**](https://github.com/EricLamphere/ezdates.git)
 -   [**ezviz**](https://github.com/EricLamphere/ezviz.git)
 -   [**ezextras**](https://github.com/EricLamphere/ezextras.git)
+
+The goal of this package specifically is to mimic much of the
+`tidyverse` methodology in making it very easy to install and load core
+packages from the `ezverse`.
 
 ## Installation
 
