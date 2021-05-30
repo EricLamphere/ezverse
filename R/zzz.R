@@ -4,7 +4,7 @@
     return()
 
   crayon::num_colors(TRUE)
-  install_ez_packages()
+  ezverse_attach()
 
   packageStartupMessage(
     emo::ji("beers"),
