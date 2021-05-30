@@ -5,6 +5,12 @@
 
   crayon::num_colors(TRUE)
   install_ez_packages()
+
+  packageStartupMessage(
+    emo::ji("beers"),
+    crayon::white(" ezxfig "),
+    crayon::cyan(packageVersion("ezxfig"))
+  )
 }
 
 is_attached <- function(x) {
