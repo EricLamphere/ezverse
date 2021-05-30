@@ -15,3 +15,12 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    ezxfig (>= 0.0.1),
+    ezextras (>= 0.0.1),
+    ezviz (>= 0.0.1),
+    dplyr
+Remotes: 
+    github::EricLamphere/ezextras,
+    github::EricLamphere/ezxfig,
+    github::EricLamphere/ezviz

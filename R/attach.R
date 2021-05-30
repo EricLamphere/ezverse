@@ -15,8 +15,8 @@ core_unloaded <- function() {
 }
 
 core_uninstalled <- function() {
-  sapply(core, rlang::is_installed) %>%
-    names()
+  installed <- sapply(core, rlang::is_installed)
+  installed[!installed]
 }
 
 # Attach the package from the same package library it was
