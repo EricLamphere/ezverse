@@ -12,14 +12,3 @@ release_bullets <- function() {
 }
 
 
-core <-
-  c(
-    "ezxfig",
-    # "ezexplore",
-    "ezextras",
-    # "ezdates",
-    "ezviz"
-  )
-
-
-

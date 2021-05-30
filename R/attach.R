@@ -1,46 +1,22 @@
-
-
-# install_ez_packages <- function(pkgs = core, ...) {
-#   tryCatch(
-#     {
-#       lapply(
-#         pkgs,
-#         function(x) {
-#           github_pkg_install(x, git_path = "https://github.com/EricLamphere/", ...)
-#         }
-#       )
-#     },
-#     error = function(e) {
-#       print(e)
-#     }
-#   )
-# }
-#
-#
-# github_pkg_install <- function(pkg, git_path, ...) {
-#   cli::cli_alert_info("installing '{pkg}' from '{paste0(git_path, pkg)}'")
-#
-#   tryCatch(
-#     {
-#       remotes::install_github(paste0(git_path, pkg), ...)
-#     },
-#     error = function(e) {
-#       cli::cli_alert_danger("'{pkg}' install failed")
-#       print(e)
-#     },
-#     warning = function(w) {
-#       print(w)
-#     }
-#   )
-# }
-#
-
+core <-
+  c(
+    "ezextras", # must be first
+    "ezxfig",
+    # "ezexplore",
+    # "ezdates",
+    "ezviz"
+  )
 
 
 
 core_unloaded <- function() {
   search <- paste0("package:", core)
   core[!search %in% search()]
+}
+
+core_uninstalled <- function() {
+  sapply(core, rlang::is_installed) %>%
+    names()
 }
 
 # Attach the package from the same package library it was
@@ -54,6 +30,12 @@ same_library <- function(pkg) {
 }
 
 ezverse_attach <- function() {
+  to_install <- core_uninstalled()
+  if (length(to_install) != 0) {
+    lapply(to_install, install_ez_packages)
+  }
+
+
   to_load <- core_unloaded()
   if (length(to_load) == 0)
     return(invisible())
@@ -89,5 +71,40 @@ package_version <- function(x) {
   paste0(version, collapse = ".")
 }
 
+
+
+install_ez_packages <- function(pkgs, ...) {
+  tryCatch(
+    {
+      lapply(
+        pkgs,
+        function(x) {
+          github_pkg_install(x, git_path = "https://github.com/EricLamphere/", ...)
+        }
+      )
+    },
+    error = function(e) {
+      print(e)
+    }
+  )
+}
+
+
+github_pkg_install <- function(pkg, git_path, ...) {
+  cli::cli_alert_info("installing '{pkg}' from '{paste0(git_path, pkg)}'")
+
+  tryCatch(
+    {
+      remotes::install_github(paste0(git_path, pkg), ...)
+    },
+    error = function(e) {
+      cli::cli_alert_danger("'{pkg}' install failed")
+      print(e)
+    },
+    warning = function(w) {
+      print(w)
+    }
+  )
+}
 
 
