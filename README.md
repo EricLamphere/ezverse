@@ -21,17 +21,17 @@ Currently, the `ezverse` is comprised of the following packages:
 -   [**ezviz**](https://github.com/EricLamphere/ezviz.git)
 -   [**ezextras**](https://github.com/EricLamphere/ezextras.git)
 
-The goal of this package specifically is to mimic much of the
+The goal of *this* package specifically is to mimic much of the
 `tidyverse` methodology in making it very easy to install and load core
 packages from the `ezverse`.
 
 ## Installation
 
-And the development version from
+You can install the development version from
 [GitHub](https://github.com/EricLamphere/ezverse) with:
 
 ``` r
-remotes::install_github("https://github.com/EricLamphere/ezverse.git")
+remotes::install_github("EricLamphere/ezverse.git")
 ```
 
 ## Code of Conduct
