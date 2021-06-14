@@ -2,6 +2,8 @@
 "_PACKAGE"
 
 # Suppress R CMD check note
+#' @importFrom ezxfig calc
+#' @importFrom ezviz get_colors
 NULL
 
 
