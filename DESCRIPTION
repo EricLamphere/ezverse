@@ -19,7 +19,8 @@ Imports:
     ezxfig (>= 0.0.1),
     ezextras (>= 0.0.1),
     ezviz (>= 0.0.1),
-    dplyr
+    dplyr,
+    magrittr
 Remotes: 
     github::EricLamphere/ezextras,
     github::EricLamphere/ezxfig,

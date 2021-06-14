@@ -72,6 +72,13 @@
       "Repository": "CRAN",
       "Hash": "a0cbe758a531d054b537d16dff4d58a1"
     },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.0.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "19e84500b64bc7e589cb1e2550e25832"
+    },
     "ellipsis": {
       "Package": "ellipsis",
       "Version": "0.3.2",
@@ -86,12 +93,55 @@
       "Repository": "CRAN",
       "Hash": "ec8ca05cffcc70569eaaad8469d2a3a7"
     },
+    "ezextras": {
+      "Package": "ezextras",
+      "Version": "0.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ezextras",
+      "RemoteUsername": "EricLamphere",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "52aaf15e7fdb6ce75d954139a568bed756907e2e",
+      "Hash": "45d63ee38a02a2b5f6e8e99db2ea3f67"
+    },
+    "ezviz": {
+      "Package": "ezviz",
+      "Version": "0.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ezviz",
+      "RemoteUsername": "EricLamphere",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "4b89028cbaf9036e6d29e36ab8a1f55ea92af43b",
+      "Hash": "256479d49f4121ff6503bff80e20c20d"
+    },
+    "ezxfig": {
+      "Package": "ezxfig",
+      "Version": "0.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ezxfig",
+      "RemoteUsername": "EricLamphere",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "fce110a8fb32646f897b9c46b23d0290f4e07df8",
+      "Hash": "762dcdfb8d7ad5585046a92efb1a56c9"
+    },
     "fansi": {
       "Package": "fansi",
       "Version": "0.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "d447b40982c576a72b779f0a3b3da227"
+    },
+    "generics": {
+      "Package": "generics",
+      "Version": "0.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4d243a9c10b00589889fe32314ffd902"
     },
     "glue": {
       "Package": "glue",
@@ -198,19 +248,19 @@
       "Repository": "CRAN",
       "Hash": "32620e2001c1dce1af49c49dccbb9420"
     },
+    "purrr": {
+      "Package": "purrr",
+      "Version": "0.3.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "97def703420c8ab10d8f0e6c72101e02"
+    },
     "rematch2": {
       "Package": "rematch2",
       "Version": "2.1.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "76c9e04c712a05848ae7a23d2f170a40"
-    },
-    "remotes": {
-      "Package": "remotes",
-      "Version": "2.3.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "92ea77818b3bb83c699008451af32b86"
     },
     "renv": {
       "Package": "renv",
@@ -275,6 +325,13 @@
       "Repository": "CRAN",
       "Hash": "349b40a9f144516d537c875e786ec8b8"
     },
+    "tidyselect": {
+      "Package": "tidyselect",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "7243004a708d06d4716717fa1ff5b2fe"
+    },
     "tinytex": {
       "Package": "tinytex",
       "Version": "0.32",
@@ -323,18 +380,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "2826c5d9efb0a88f657c7a679c7106db"
-    },
-    "emo": {
-      "Package": "emo",
-      "Version": "0.0.0.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "emo",
-      "RemoteUsername": "hadley",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "3f03b11491ce3d6fc5601e210927eff73bf8e350",
-      "Hash": "10f2391a926b0087a671ed9965ea30a3"
     }
   }
 }
