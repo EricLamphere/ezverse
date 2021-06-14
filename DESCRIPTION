@@ -20,7 +20,13 @@ Imports:
     ezextras (>= 0.0.1),
     ezviz (>= 0.0.1),
     dplyr,
-    magrittr
+    magrittr,
+    rstudioapi,
+    cli,
+    crayon,
+    purrr,
+    rlang,
+    tibble
 Remotes: 
     github::EricLamphere/ezextras,
     github::EricLamphere/ezxfig,
