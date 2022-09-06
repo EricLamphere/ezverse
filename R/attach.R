@@ -2,8 +2,7 @@ core <-
   c(
     "ezextras", # must be first
     "ezxfig",
-    # "ezexplore",
-    # "ezdates",
+    #"ezexplore",
     "ezviz"
   )
 
